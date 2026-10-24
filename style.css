@@ -1,0 +1,279 @@
+/* ألوان فيسبوك الرسمية وهيكلية الموقع */
+/* ألوان فيسبوك الرسمية مع الشعار المائي المثبت في العمق */
+body {
+    background-color: #f0f2f5; 
+    color: #1c1e21; 
+    font-family: Segoe UI, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+
+/* ترويسة فيسبوك الثابتة بالكامل في الأعلى */
+.fb-header {
+    background-color: #1877f2; /* أزرق فيسبوك الرسمي */
+    padding: 8px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fb-right-zone {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+/* تكبير شعار الجامعة الافتراضية السورية ليبرز بوضوح في الترويسة */
+.fb-right-zone img {
+    height:65px; /* تم تكبير الحجم من 40px إلى 65px ليصبح واضحاً وملائماً */
+    border-radius: 8px; /* زوايا منحنية خفيفة ليتناسب مع اللوغو الرسمي */
+    background-color: #ffffff;
+    padding: 2px;
+}
+
+.fb-search-bar {
+    background-color: #f0f2f5;
+    border: none;
+    padding: 9px 15px;
+    border-radius: 50px;
+    width: 200px;
+    font-size: 0.9rem;
+}
+
+.fb-center-nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex: 1;
+}
+
+.fb-nav-item {
+    color: #e4e6eb;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.fb-nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.fb-nav-item.fb-active {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-radius: 0;
+}
+
+.fb-left-profile {
+    flex: 1;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* تخطيط الفيس بوك: عامودين (تغذية الأخبار + عامود جانبي) */
+.fb-main-layout {
+    max-width: 1100px;
+    margin: 80px auto 40px auto; /* مسافة أمان تحت الترويسة الثابتة */
+    display: flex;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+/* عامود المنشورات (السيارات) */
+.fb-feed-stream {
+    flex: 2;
+}
+
+/* عامود السايدبار الثابت (استمارة الحجز) */
+.fb-sidebar-box {
+    flex: 1.2;
+    align-self: flex-start;
+    position: sticky;
+    top: 75px;
+}
+
+/* تصميم بوست الفيس بوك الفريد */
+.fb-post-card {
+    /* جعل الخلفية بيضاء بنسبة شفافية 80% */
+    background-color: rgba(255, 255, 255, 0.8); 
+    /* تأثير التغبيش الضبابي لمنع تشتت العين أثناء القراءة */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(206, 208, 212, 0.7);
+}
+
+.fb-post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.fb-post-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #1877f2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.fb-post-meta h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #050505;
+}
+
+.fb-post-meta span {
+    font-size: 0.8rem;
+    color: #65676b;
+}
+
+.fb-post-body {
+    font-size: 0.95rem;
+    color: #050505;
+    margin-bottom: 15px;
+}
+
+.fb-post-price-tag {
+    background-color: #e7f3ff;
+    color: #1877f2;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* صندوق التفاصيل داخل البوست */
+.fb-post-details {
+    display: none;
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+    border-right: 4px solid #1877f2;
+    font-size: 0.9rem;
+}
+
+/* أزرار التفاعل أسفل البوست (لايك، شير، تفاصيل) */
+.fb-post-actions {
+    display: flex;
+    border-top: 1px solid #ced0d4;
+    border-bottom: 1px solid #ced0d4;
+    padding: 4px 0;
+    margin-top: 15px;
+}
+
+.fb-action-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 8px;
+    color: #65676b;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 4px;
+}
+
+.fb-action-btn:hover {
+    background-color: #f2f2f2;
+}
+
+.fb-action-btn.activated {
+    color: #1877f2;
+}
+
+/* تصميم صناديق الاستمارات المستوحى من نوافذ فيسبوك */
+.fb-sidebar-widget {
+    /* خلفية بيضاء شبه شفافة بنسبة 85% */
+    background-color: rgba(255, 255, 255, 0.85);
+    /* تأثير التغبيش الضبابي */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border: 1px solid rgba(206, 208, 212, 0.7);
+}
+
+.fb-sidebar-widget h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    color: #050505;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+}
+
+.fb-label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #65676b;
+}
+
+/* حقول إدخال نصية موحدة من مكان واحد بنمط فيسبوك النظيف */
+.fb-input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border: 1px solid #ced0d4;
+    background-color: #ffffff;
+    color: #1c1e21;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+.fb-input-field:focus {
+    border-color: #1877f2;
+    outline: none;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+/* أزرار فيسبوك الزرقاء الكبيرة */
+.fb-blue-btn {
+    background-color: #1877f2;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.fb-blue-btn:hover {
+    background-color: #166fe5;
+}

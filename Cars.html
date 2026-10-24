@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://w3.org">
+<html xmlns="http://w3.org" xml:lang="ar" lang="ar">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>آخر منشورات السيارات المتاحة للحجز</title>
+    
+    <!-- 1. ملف التنسيق -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <!-- 2. استدعاء ملف مكتبة jQuery المحلي أولاً (تأكد من مطابقة الاسم) -->
+    <script type="text/javascript" src="jquery.min.js"></script>
+    
+    <!-- 3. استدعاء ملف دالات التحقق الخاص بك ثانياً -->
+    <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+
+    <!-- ترويسة فيسبوك العلوية الكاملة -->
+    <div class="fb-header">
+        <div class="fb-right-zone">
+            <img src="svu_logo.png" alt="SVU Logo" />
+            
+        </div>
+        
+        <div class="fb-center-nav">
+            <a href="home.html" class="fb-nav-item">الرئيسية</a>
+            <a href="AboutUs.html" class="fb-nav-item">حول المكتب</a>
+            <a href="Cars.html" class="fb-nav-item fb-active">منصة السيارات</a>
+        </div>
+        
+        <div class="fb-left-profile">
+            <span>الحساب الجامعي: maha_286743</span>
+        </div>
+    </div>
+
+    <!-- الهيكل المشترك   -->
+    <div class="fb-main-layout">
+        
+        <!-- العامود الأيمن: منشورات التغذية (السيارات المتاحة) -->
+        <div class="fb-feed-stream">
+            
+            <!-- بوست السيارة 1 -->
+            <div class="fb-post-card">
+                <div class="fb-post-header">
+                    <div class="fb-post-avatar">CR</div>
+                    <div class="fb-post-meta">
+                        <h3>Toyota Corolla (كود: CR-001)</h3>
+                        <span>سنة الصنع: 2023 · تم النشر الآن</span>
+                    </div>
+                </div>
+                <div class="fb-post-body">
+                    سيارة يابانية اقتصادية ومريحة جداً للمشاوير الطويلة والقصيرة داخل المدينة. جاهزة للتسليم الفوري مع خزان وقود ممتلئ.
+                    <br />
+                    <div class="fb-post-price-tag" data-cost="250000">السعر اليومي: 250,000 ل.س</div>
+                    
+                    <!-- الصندوق المالي لعرض المواصفات المخفية بالـ jQuery -->
+                    <div class="fb-post-details">
+                        <strong>المواصفات الفنية:</strong> نوع الوقود: بنزين 95 | ناقل الحركة: أوتوماتيك سوبر | عدد المقاعد: 5 | عداد الكيلومترات: 12,000 كم | اللون: فضي ميتاليك
+                    </div>
+                </div>
+                <div class="fb-post-actions">
+                    <button type="button" class="fb-action-btn action-toggle-details">⚙️ إظهار المواصفات</button>
+                    <button type="button" class="fb-action-btn action-select-car">
+                        <input type="checkbox" class="fb-hidden-check" style="pointer-events:none;" /> ➕ تحديد السيارة
+                    </button>
+                    <span class="car-hidden-name" style="display:none;">Toyota Corolla</span>
+                </div>
+            </div>
+
+            <!-- بوست السيارة 2 -->
+            <div class="fb-post-card">
+                <div class="fb-post-header">
+                    <div class="fb-post-avatar">CR</div>
+                    <div class="fb-post-meta">
+                        <h3>Kia Sportage (كود: CR-002)</h3>
+                        <span>سنة الصنع: 2022 · تم النشر منذ ساعة</span>
+                    </div>
+                </div>
+                <div class="fb-post-body">
+                    سيارة جيب عائلية مرتفعة، ممتازة للطرقات الصعبة والسفر بين المحافظات السورية. أداء جبار ومقصورة واسعة ومريحة.
+                    <br />
+                    <div class="fb-post-price-tag" data-cost="400000">السعر اليومي: 400,000 ل.س</div>
+                    
+                    <div class="fb-post-details">
+                        <strong>المواصفات الفنية:</strong> نوع الوقود: بنزين | ناقل الحركة: دفع رباعي أوتوماتيك | عدد المقاعد: 5 | عداد الكيلومترات: 35,000 كم | اللون: أسود ملوكي
+                    </div>
+                </div>
+                <div class="fb-post-actions">
+                    <button type="button" class="fb-action-btn action-toggle-details">⚙️ إظهار المواصفات</button>
+                    <button type="button" class="fb-action-btn action-select-car">
+                        <input type="checkbox" class="fb-hidden-check" style="pointer-events:none;" /> ➕ تحديد السيارة
+                    </button>
+                    <span class="car-hidden-name" style="display:none;">Kia Sportage</span>
+                </div>
+            </div>
+
+            <!-- بوست السيارة 3 -->
+            <div class="fb-post-card">
+                <div class="fb-post-header">
+                    <div class="fb-post-avatar">CR</div>
+                    <div class="fb-post-meta">
+                        <h3>Hyundai Elantra (كود: CR-003)</h3>
+                        <span>سنة الصنع: 2024 · تم النشر اليوم</span>
+                    </div>
+                </div>
+                <div class="fb-post-body">
+                    إلانترا بشكلها الرياضي الجديد كلياً، تمنحك قيادة ناعمة مع أحدث أنظمة الرفاهية والاتصال الذكي بالهواتف.
+                    <br />
+                    <div class="fb-post-price-tag" data-cost="300000">السعر اليومي: 300,000 ل.س</div>
+                    
+                    <div class="fb-post-details">
+                        <strong>المواصفات الفنية:</strong> نوع الوقود: بنزين اقتصادي | ناقل الحركة: أوتوماتيك تيبترونيك | عدد المقاعد: 5 | عداد الكيلومترات: 2,500 كم | اللون: أبيض لؤلؤي
+                    </div>
+                </div>
+                <div class="fb-post-actions">
+                    <button type="button" class="fb-action-btn action-toggle-details">⚙️ إظهار المواصفات</button>
+                    <button type="button" class="fb-action-btn action-select-car">
+                        <input type="checkbox" class="fb-hidden-check" style="pointer-events:none;" /> ➕ تحديد السيارة
+                    </button>
+                    <span class="car-hidden-name" style="display:none;">Hyundai Elantra</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- العامود الأيسر: لوحة السايدبار التفاعلية (فورم الحجز السريع) -->
+        <div class="fb-sidebar-box">
+            <div class="fb-sidebar-widget">
+                <h2>إنشاء طلب حجز جديد</h2>
+                <p style="font-size:0.85rem; color:#65676b;">حدد السيارات من المنشورات أولاً، ثم اضغط على زر "متابعة البيانات" لفتح الاستمارة الشخصية.</p>
+                
+                <button type="button" class="fb-blue-btn" id="fbBtnContinue">متابعة طلب الحجز</button>
+
+                <!-- قسم الاستمارة الشخصية والتواريخ - يفتح بالـ jQuery -->
+                <div id="fbFormSection" style="display: none; margin-top: 15px;">
+                    <form id="fbRentForm" action="" method="post" onsubmit="return validateFacebookOrder();">
+                        <fieldset style="border:1px solid #ced0d4; border-radius:6px; padding:12px;">
+                            <legend style="color:#1877f2; font-weight:bold; font-size:0.9rem;">بيانات المستندات الرسمية</legend>
+
+                            <label class="fb-label" for="fullName">الاسم الكامل (أحرف عربية فقط):</label>
+                            <input type="text" id="fullName" class="fb-input-field" placeholder="اكتب اسمك الثلاثي بالعربي" />
+
+                            <label class="fb-label" for="nationalId">الرقم الوطني السوري (11 خانة):</label>
+                            <input type="text" id="nationalId" class="fb-input-field" maxlength="11" placeholder="01XXXXXXXXX" />
+
+                            <label class="fb-label" for="startDate">تاريخ بداية الإيجار:</label>
+                            <input type="date" id="startDate" class="fb-input-field" />
+
+                            <label class="fb-label" for="endDate">تاريخ نهاية الإيجار:</label>
+                            <input type="date" id="endDate" class="fb-input-field" />
+
+                            <label class="fb-label" for="mobile">رقم الموبايل الشخصي:</label>
+                            <input type="text" id="mobile" class="fb-input-field" placeholder="09XXXXXXXX" />
+
+                            <label class="fb-label" for="email">صندوق البريد الإلكتروني:</label>
+                            <input type="email" id="email" class="fb-input-field" placeholder="name@example.com" />
+
+                            <input type="submit" value="تأكيد الحجز ونشر الطلب" class="fb-blue-btn" />
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
